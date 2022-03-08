@@ -12,6 +12,7 @@ String c = "Hello";
 char space = ' '; //System Resources, choose your variables wisely for the hard drive space
 //println(a+space+b+space+c+x); //First Method of Concatenation, +
 //println(a,b,c+x); //Second Method of Concatenation, notice the spaces
+
 String d ="Mr";
 String e = "Mercer";
 String f = "counts";
