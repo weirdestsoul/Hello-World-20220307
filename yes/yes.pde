@@ -1,44 +1,53 @@
 
 //Global Variables
+String d;
+String e;
+String f;
+String g;
+String ten;
+String i;
+char w;
+String one;
+char y;
+int two;
+int skipCount=2;
 //
-void setup() {}//End setup
+void setup() {
+String secondSentence ="Mr. Mercer counts to 10, by 1."; //Local Variables
+//println(secondSentence);
+//Populations, Declaration, Valuing
+d ="Mr";
+e = "Mercer";
+f = "counts";
+g = "to";
+ten = "10000";
+i = "by";
+w = ',';
+one ="1";
+y ='.';
+two = 1;
+println(d+y,e,f,g,ten+w,i,str(two)+y); //Casting. making a string into a number
+println("One plus two is", int(one)+two );
+}//End setup
 //
-void draw() {}//End draw
+void draw() {
+  two+=skipCount; //two+1, two++
+  println(d+y,e,f,g,ten+w,i,str(two)+y);
+}//End draw
 //
-void keyPressed() {}//End keyPress
+void keyPressed() {
+}//End keyPress
 //
-void mousePressed() {}//End mousePressed
+void mousePressed() {
+}//End mousePressed
 //
 // What we will copy and paste fron the Static Program
 /*
-println("Hello World!");
-//String firstSentence = "You said Hello!";
-//String secondSentence ="Mr. Mercer counts to 10, by 1.";
-//println(firstSentence)
-//println(secondSentence);
-//
 // Concatenation
-char x ='!';
-String a = "You";
-String b = "said";
-String c = "Hello";
-char space = ' '; //System Resources, choose your variables wisely for the hard drive space
-//println(a+space+b+space+c+x); //First Method of Concatenation, +
-//println(a,b,c+x); //Second Method of Concatenation, notice the spaces
 //
-String d ="Mr";
-String e = "Mercer";
-String f = "counts";
-String g = "to";
-String h = "10";
-String i = "by";
-char w = ',';
-char z ='1';
-char y ='.';
-int two = 1;
-print(d+y+space+e+space+f+space+ g+space+h+w+space+i+space+z+y, "\n"); //Character Escapes, \n, \t
-println("\t\t\t", d+y,e,f,g,h+w,i,int(z)+two+y); //Casting. making a string into a number
-println( int(z)+two );
+
+
+
 //
 /*Note: the computer is adding ASCII Values
 Period has an ASCII Value of 46
