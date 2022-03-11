@@ -1,12 +1,11 @@
 
 //Global Variables
 long start = System.currentTimeMillis();
-// ...
 long finish = System.currentTimeMillis();
 long timeElapsed = finish - start;
 String d, e, f, g, ten, i, one;
 char w, y;
-int skipCount=2, two, twenty,tea;
+int skipCount=2, two, twenty,tea, zer;
 float decimal=1.0, thirty;
 
 //float is a decimal value, also must include a zero decimal or it will be considered an integer
@@ -28,6 +27,7 @@ one ="1";
 y ='.';
 two = 1;
 tea = 1;
+zer = 0;
 
 //println(d+y,e,f,g,ten+w,i,str(two)+y); //Casting. making a string into a number
 //println("One plus two is", int(one)+two );
@@ -40,8 +40,8 @@ void draw() {
   println(d,e, "divides by 2 from", str(twenty)+y);
   thirty/=skipCount;
   println(d,e,f,g,one, "backwards from", str(thirty)+y);
-  tea++;
-  println("Time Elapsed", str(tea), "milliseconds" );
+  zer+=1;
+  println("Time Elapsed", str(zer), "milliseconds" );
 //End draw
 }//
 void keyPressed() {
