@@ -5,7 +5,7 @@ long finish = System.currentTimeMillis();
 long timeElapsed = finish - start;
 String d, e, f, g, ten, i, one;
 char w, y;
-int skipCount=2, two, twenty,tea, zer;
+int skipCount=2, two, twenty,tea, zer, deux;
 float decimal=1.0, thirty;
 
 //float is a decimal value, also must include a zero decimal or it will be considered an integer
@@ -20,7 +20,7 @@ f = "counts";
 g = "to";
 ten = "10000";
 twenty = 10000;
-thirty = 1000000000000.0;
+thirty = 1000.0;
 i = "by";
 w = ',';
 one ="1";
@@ -28,6 +28,7 @@ y ='.';
 two = 1;
 tea = 1;
 zer = 0;
+deux = 2;
 
 //println(d+y,e,f,g,ten+w,i,str(two)+y); //Casting. making a string into a number
 //println("One plus two is", int(one)+two );
@@ -38,10 +39,10 @@ void draw() {
   println(d+y,e,f,g,ten+w,i,str(two)+y);
   twenty/=skipCount; //Formula to count backwards from 10000, twenty= twenty - 1, twenty-=skipCount
   println(d,e, "divides by 2 from", str(twenty)+y);
-  thirty/=skipCount;
-  println(d,e,f,g,one, "backwards from", str(thirty)+y);
+  thirty-=skipCount;
+  println(d,e,f,g,str(deux), "backwards from", str(thirty)+y);
   zer+=1;
-  println("Time Elapsed", str(zer), "milliseconds" );
+  println("Time Elapsed:", str(zer/60), "seconds" );
 //End draw
 }//
 void keyPressed() {
