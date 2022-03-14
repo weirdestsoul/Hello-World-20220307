@@ -1,7 +1,4 @@
-size(700, 500);//Display Geometry (Orientations): Square, Landscape, Portrait
-//fullScreen();//displayWidth, displayHeight
-println("Canvas Size", width, height);
-println("Display", "width", displayWidth, "height", displayHeight);
+//Global Variables
 int x = width*1/4, y = height*1/4, recWidth = width*1/2, recHeight = height*1/2;
 int backgroundBlue=0;
 int strokeReset=1;
@@ -9,8 +6,19 @@ int thin=width*1/50, thick=2*thin;
 color strokeColour, fillColour;
 color yellow=#FFF150, purple=#5D35BC, whiteReset=#FFFFFF, blackReset=#000000;
 color yellowNightMode=#F8FC03, purpleNightMode=#3F0458; //no blue light for the color shade
-Boolean nightMode=true; //Daytime is false
-//Background as grey scale, 0-255 (notice 256 numbers)
+Boolean nightMode=false; //Daytime is false
+//
+void setup() 
+{
+  size(700, 500);//Display Geometry (Orientations): Square, Landscape, Portrait
+//fullScreen();//displayWidth, displayHeight
+println("Canvas Size", width, height);
+println("Display", "width", displayWidth, "height", displayHeight);
+}//End setub
+//
+void draw() 
+{
+  //Background as grey scale, 0-255 (notice 256 numbers)
 background(50);
 //New Background function "covers" greyscale background
 //Background as colour, RGB, random(a,b)
@@ -27,6 +35,7 @@ if (nightMode==true) //Night Mode choices
   fillColour = purple;
   println("here", backgroundBlue);
 } //end Night Mode
+//
 background(color(random(0, 255),  random(255), backgroundBlue ));
 strokeWeight(thick);
 stroke(strokeColour); // yellow, yellowNightMode
@@ -36,4 +45,14 @@ rect(x, y, recWidth, recHeight);
 fill(whiteReset);
 stroke(blackReset);
 strokeWeight(strokeReset);
+}//End draw
+//
+void keyPressed() {}//end keyPressed
+//
+void mousePressed() {}//end mousePressed
+
+/*
+
+
 //End of program
+*/
