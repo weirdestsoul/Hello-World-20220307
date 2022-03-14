@@ -5,6 +5,15 @@ println("Display", "width", displayWidth, "height", displayHeight);
 int x = width*1/4, y = height*1/4, recWidth = width*1/2, recHeight = height*1/2;
 //Background as grey scale, 0-255 (notice 256 numbers)
 background(50);
+//New Background function "covers" greyscale background
 //Background as colour, RGB, random(a,b)
 background(color(random(0, 255), random(255), random(255) ));
+strokeWeight(thick);
+stroke(yellow);
+fill(purple);
 rect(x, y, recWidth, recHeight);
+//reset to default
+fill(whiteReset);
+stroke(blackReset);
+strokeWeight(strokeReset);
+//End of program
