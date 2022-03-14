@@ -9,7 +9,7 @@ int thin=width*1/50, thick=2*thin;
 color strokeColour, fillColour;
 color yellow=#FFF150, purple=#5D35BC, whiteReset=#FFFFFF, blackReset=#000000;
 color yellowNightMode=#F8FC03, purpleNightMode=#3F0458; //no blue light for the color shade
-Boolean nightMode=false; //Daytime is false
+Boolean nightMode=true; //Daytime is false
 //Background as grey scale, 0-255 (notice 256 numbers)
 background(50);
 //New Background function "covers" greyscale background
