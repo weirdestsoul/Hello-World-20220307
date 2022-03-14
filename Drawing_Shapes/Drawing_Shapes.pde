@@ -12,7 +12,7 @@ background(50);
 //New Background function "covers" greyscale background
 //Background as colour, RGB, random(a,b)
 //Night Mode means that background color has to have little to no blue - change random for night mode
-background(color(random(0, 255), random(255), random(255, 0) ));
+background(color(random(0, 255),  random(255), 0 ));
 strokeWeight(thick);
 stroke(yellowNightMode); // yellow
 fill(purpleNightMode); // purple
